@@ -32,7 +32,7 @@ if __name__ == '__main__':
     ]
 
     # Create a pool of worker processes
-    with Pool(4) as pool:
+    with Pool() as pool:
         results = pool.map(check_combinations, args_list)
 
     # Filter out None results and print valid ones
