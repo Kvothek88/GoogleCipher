@@ -12,7 +12,7 @@ for w in range(1,10):
                             for c in range(0,10):
                                 for m in range(0,10):
                                     values = {w,o,t,l,d,g,e,c,m}
-                                    if len(values)==9:
+                                    if len(values)==9: #Proceed to check below only if all letters are distinct
                                         min_value = str(w) + str(w) +str(w) +str(d) + str(o) + str(t)
                                         sub_value = str(g) + str(o) +str(o) +str(g) + str(l) + str(e)
                                         dif_value = str(d) + str(o) +str(t) +str(c) + str(o) + str(m)
